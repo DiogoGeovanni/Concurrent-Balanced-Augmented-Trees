@@ -21,6 +21,7 @@ alta contenção
 perda de escalabilidade
 dificuldade de manter atomicidade
 inconsistências concorrentes
+
 🧠 Estrutura Base
 
 A solução apresentada no artigo utiliza:
@@ -29,6 +30,7 @@ BSTs Cromáticas (Chromatic Trees)
 Técnica de Augmentation de Fatourou e Ruppert
 Operações lock-free com LLX/SCX
 Versionamento imutável de nós
+
 🚀 Proposta do Artigo — BAT
 
 A contribuição principal é a Balanced Augmented Tree (BAT), a primeira árvore balanceada aumentada totalmente lock-free.
@@ -40,6 +42,7 @@ Atualizações atômicas via SCX
 Versionamento imutável
 Propagação cooperativa entre threads
 Separação entre balanceamento e augmentation
+
 ⚙️ Ideia Central
 
 O BAT substitui patches locais da árvore em vez de atualizar toda a estrutura.
@@ -70,6 +73,7 @@ Atualização local
 Concorrência segura
 Operações lock-free
 Melhor escalabilidade
+
 📈 Vantagens do BAT
 Estrutura totalmente lock-free
 Alta escalabilidade concorrente
@@ -93,6 +97,7 @@ Portanto, o BAT é mais adequado para:
 sistemas analíticos
 bancos de dados concorrentes
 processamento paralelo em larga escala
+
 🧪 Implementação Neste Repositório
 
 Este repositório contém uma implementação didática que demonstra:
@@ -106,6 +111,7 @@ Preservação do restante da árvore
 Arquivo principal:
 
 Main.java
+
 🖥️ Como Executar
 
 Compilar:
@@ -119,8 +125,11 @@ java Main
 O programa irá:
 
 imprimir árvore antes
+
 aplicar rebalanceamento
+
 imprimir árvore depois
+
 📄 Referência
 
 WRENCH, Evan; SINGH, Ajay; ROH, Younghun; FATOUROU, Panagiota;
