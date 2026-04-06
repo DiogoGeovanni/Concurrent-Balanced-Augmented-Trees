@@ -130,6 +130,34 @@ aplicar rebalanceamento
 
 imprimir árvore depois
 
+🔮 Trabalhos Futuros (do Artigo)
+
+Os autores do artigo sugerem possíveis extensões para o modelo BAT.
+A proposta mais relevante é a generalização do BAT para outras estruturas augmentadas.
+
+Essa extensão permitiria aplicar a técnica em:
+
+interval trees concorrentes
+segment trees concorrentes
+estruturas de order-statistics
+árvores com agregações complexas
+consultas de intervalo mais avançadas
+
+A ideia central é transformar o BAT em uma framework concorrente genérica para estruturas aumentadas.
+
+Isso ampliaria significativamente o impacto do modelo, permitindo suporte eficiente a múltiplos tipos de queries concorrentes sem uso de locks.
+
+🧠 Por que essa proposta é importante
+
+Expande o alcance do BAT
+Permite novas estruturas concorrentes
+Aumenta o impacto teórico do trabalho
+Abre novas linhas de pesquisa
+
+📌 Resumo
+
+O trabalho futuro mais promissor é tornar o BAT uma estrutura genérica para árvores augmentadas concorrentes, ampliando sua aplicação para diferentes tipos de consultas e agregações.
+
 📄 Referência
 
 WRENCH, Evan; SINGH, Ajay; ROH, Younghun; FATOUROU, Panagiota;
