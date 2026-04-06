@@ -135,7 +135,11 @@ p. 136–149.
 DOI: https://doi.org/10.1145/3774934.3786437
 
 👨‍💻 Autores do Projeto
+
 Diogo Geovanni
+
 Lóren Gabriela
+
 Dayvson Henrique
+
 Marcos Vinicius
