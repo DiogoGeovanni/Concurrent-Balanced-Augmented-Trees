@@ -137,11 +137,11 @@ A proposta mais relevante é a generalização do BAT para outras estruturas aug
 
 Essa extensão permitiria aplicar a técnica em:
 
-interval trees concorrentes
-segment trees concorrentes
-estruturas de order-statistics
-árvores com agregações complexas
-consultas de intervalo mais avançadas
+- interval trees concorrentes
+- segment trees concorrentes
+- estruturas de order-statistics
+- árvores com agregações complexas
+- consultas de intervalo mais avançadas
 
 A ideia central é transformar o BAT em uma framework concorrente genérica para estruturas aumentadas.
 
@@ -149,10 +149,10 @@ Isso ampliaria significativamente o impacto do modelo, permitindo suporte eficie
 
 🧠 Por que essa proposta é importante
 
-Expande o alcance do BAT
-Permite novas estruturas concorrentes
-Aumenta o impacto teórico do trabalho
-Abre novas linhas de pesquisa
+- Expande o alcance do BAT
+- Permite novas estruturas concorrentes
+- Aumenta o impacto teórico do trabalho
+- Abre novas linhas de pesquisa
 
 📌 Resumo
 
