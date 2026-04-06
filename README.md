@@ -8,28 +8,28 @@ O artigo de Wrench et al. (2026) investiga o desenvolvimento de estruturas de da
 
 O problema estudado é a dificuldade de implementar árvores aumentadas que armazenam metadados como:
 
-tamanho de subárvore (size)
-soma (sum)
-rank
-consultas de intervalo
+- tamanho de subárvore (size)
+- soma (sum)
+- rank
+- consultas de intervalo
 
 em ambientes multi-threaded.
 
 O desafio central é que atualizações nesses campos precisam ser propagadas até a raiz, causando:
 
-alta contenção
-perda de escalabilidade
-dificuldade de manter atomicidade
-inconsistências concorrentes
+- alta contenção
+- perda de escalabilidade
+- dificuldade de manter atomicidade
+- inconsistências concorrentes
 
 🧠 Estrutura Base
 
 A solução apresentada no artigo utiliza:
 
-BSTs Cromáticas (Chromatic Trees)
-Técnica de Augmentation de Fatourou e Ruppert
-Operações lock-free com LLX/SCX
-Versionamento imutável de nós
+- BSTs Cromáticas (Chromatic Trees)
+- Técnica de Augmentation de Fatourou e Ruppert
+- Operações lock-free com LLX/SCX
+- Versionamento imutável de nós
 
 🚀 Proposta do Artigo — BAT
 
@@ -37,11 +37,11 @@ A contribuição principal é a Balanced Augmented Tree (BAT), a primeira árvor
 
 Principais características:
 
-Estrutura balanceada concorrente
-Atualizações atômicas via SCX
-Versionamento imutável
-Propagação cooperativa entre threads
-Separação entre balanceamento e augmentation
+- Estrutura balanceada concorrente
+- Atualizações atômicas via SCX
+- Versionamento imutável
+- Propagação cooperativa entre threads
+- Separação entre balanceamento e augmentation
 
 ⚙️ Ideia Central
 
@@ -69,17 +69,18 @@ Um patch é uma pequena subárvore substituída durante o rebalanceamento.
 
 Isso permite:
 
-Atualização local
-Concorrência segura
-Operações lock-free
-Melhor escalabilidade
+- Atualização local
+- Concorrência segura
+- Operações lock-free
+- Melhor escalabilidade
 
 📈 Vantagens do BAT
-Estrutura totalmente lock-free
-Alta escalabilidade concorrente
-Linearizabilidade das operações
-Suporte a dados augmentados
-Excelente desempenho em range queries
+
+- Estrutura totalmente lock-free
+- Alta escalabilidade concorrente
+- Linearizabilidade das operações
+- Suporte a dados augmentados
+- Excelente desempenho em range queries
 
 Os autores relatam ganhos de até 30x em consultas de intervalo.
 
@@ -87,26 +88,26 @@ Os autores relatam ganhos de até 30x em consultas de intervalo.
 
 Apesar dos ganhos, o BAT apresenta:
 
-Alta complexidade de implementação
-Overhead de memória (multi-versionamento)
-Maior custo de gerenciamento de versões
-Dificuldade de uso em sistemas simples
+- Alta complexidade de implementação
+- Overhead de memória (multi-versionamento)
+- Maior custo de gerenciamento de versões
+- Dificuldade de uso em sistemas simples
 
 Portanto, o BAT é mais adequado para:
 
-sistemas analíticos
-bancos de dados concorrentes
-processamento paralelo em larga escala
+- sistemas analíticos
+- bancos de dados concorrentes
+- processamento paralelo em larga escala
 
 🧪 Implementação Neste Repositório
 
 Este repositório contém uma implementação didática que demonstra:
 
-Árvore grande com altura elevada
-Detecção automática de patch
-Patch replacement
-Rebalanceamento local
-Preservação do restante da árvore
+- Árvore grande com altura elevada
+- Detecção automática de patch
+- Patch replacement
+- Rebalanceamento local
+- Preservação do restante da árvore
 
 Arquivo principal:
 
@@ -173,10 +174,7 @@ DOI: https://doi.org/10.1145/3774934.3786437
 
 👨‍💻 Autores do Projeto
 
-Diogo Geovanni
-
-Lóren Gabriela
-
-Dayvson Henrique
-
-Marcos Vinicius
+- Diogo Geovanni
+- Lóren Gabriela
+- Dayvson Henrique
+- Marcos Vinicius
