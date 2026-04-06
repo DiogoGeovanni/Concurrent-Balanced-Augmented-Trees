@@ -143,7 +143,7 @@ public class Main {
 
         for (int i = 0; i < nivel; i++) {
             System.out.print("    ");
-        }.
+        }
 
         System.out.println(node.key);
 
